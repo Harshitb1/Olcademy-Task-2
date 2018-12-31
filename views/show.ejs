@@ -1,0 +1,29 @@
+<% include ./partials/header %>
+
+
+<div class="ui main text container segment">
+    <div class="ui huge header">Name : <%= query.name %></div>
+    <div class="ui top attached ">
+        <div class="item">
+           
+            <div class="content">
+                <span><%= query.created.toDateString() %></span>
+            </div>
+            <div class="decription">
+                <p>Email : <%= query.email %></p>                
+            </div>
+            <div class="decription">
+                <p>Subject : <%= query.subject %></p>                
+            </div>
+            <div class="decription">
+                <p>Message : <%= query.message %></p>                
+            </div>
+            <div class="decription">
+                <p>Query : <%= query.query %></p>                
+            </div>
+            
+        </div>
+    </div> 
+</div>
+
+<% include ./partials/footer %>
